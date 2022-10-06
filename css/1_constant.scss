@@ -1,0 +1,99 @@
+$f: 'SF Pro Display';
+.fw300 {
+    font-weight: 300;
+}
+.fw500 {
+    font-weight: 500;
+}
+.fw600 {
+    font-weight: 600;
+}
+.bold {
+    font-weight: 700;
+}
+.color-text {
+    color: #333;
+}
+.text-blue{
+    color: #7797E9;
+}
+.fon-gray {
+    background-color: #E3E9F5;
+    color: #7797E9;
+    &:hover{
+        background-color: darken(#E3E9F5,5%) !important;
+    }
+}
+.fon-orang {
+    background-color: #F99746;
+    color: #fff;
+    &:hover{
+        background-color: darken(#F99746,5%) !important;
+    }
+}
+.db {
+    display: block;
+}
+.dib {
+    display: inline-block;
+}
+.flx {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.dif {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+}
+.fxs {
+    flex-shrink: 0;
+}
+.fxg {
+    flex-grow: 1;
+}
+.fxww {
+    flex-wrap: wrap;
+}
+.aic {
+    align-items: center;
+}
+.ais {
+    align-items: flex-start;
+}
+.aie {
+    align-items: flex-end;
+}
+.jcsb {
+    justify-content: space-between;
+}
+.jcfs {
+    justify-content: flex-start;
+}
+.jcfe {
+    justify-content: flex-end;
+}
+.jcc {
+    justify-content: center;
+}
+:root {
+    --w40: 40px;
+    --w30: 30px;
+    --w25: 25px;
+    --w20: 20px;
+    --w15: 15px;
+    --w10: 10px;
+    --f40: 40px;
+    --f30: 30px;
+    --f24: 24px;
+    --f20: 20px;
+    --f18: 18px;
+    --f15: 15px;
+    --f10: 10px;
+}
+

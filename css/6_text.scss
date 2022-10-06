@@ -1,0 +1,142 @@
+/* Scss Document */
+
+.text {
+    $marb: 15px;
+    line-height: 1.7;
+    b,
+    strong {
+        color: #000;
+        font-weight: 600;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        b,
+        strong {
+            color: #7797E9;
+        }
+    }
+    img {
+        max-width: 100%!important;
+        height: auto!important;
+        border-radius: 10px;
+    }
+    ul {
+        margin-bottom: $marb;
+        display: block;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        li {
+            display: block;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 30px;
+            &:before {
+                content: '';
+                background-color: #333;
+                width: 10px;
+                height: 2px;
+                position: absolute;
+                top: 9px;
+                left: 0;
+            }
+        }
+    }
+    .list_medium {
+        font-size: 18px;
+        li {
+            display: block;
+            padding-left: 60px;
+            position: relative;
+            &:before {
+                content: '';
+                background-color: #7797E9;
+                width: 33px;
+                height: 2px;
+                position: absolute;
+                top: 15px;
+                left: 0;
+            }
+        }
+    }
+    ul ul {
+        margin-top: $marb;
+        margin-left: 15px;
+    }
+    ol {
+        margin-bottom: $marb;
+        margin-left: 0px;
+        list-style-position: inside;
+    }
+    ul ul li {
+        background-image: none;
+        padding-left: 0px;
+        list-style-type: square;
+    }
+    li {
+        &:nth-child(1n+2) {
+            margin-top: 10px;
+        }
+    }
+    p {
+        margin-bottom: $marb;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    table {
+        margin-bottom: $marb;
+        background-color: #fff;
+        border-collapse: collapse;
+        width: 100%;
+        tr {
+            &:nth-child(2n+2) {
+                background-color: rgba(238, 238, 238, 0.42);
+            }
+            &:hover {
+                background-color: rgba(238, 238, 238, 0.8);
+            }
+        }
+        th {
+            background-color: #7797E9;
+            padding: 15px 10px;
+            color: #fff;
+            border: 1px solid #fff;
+            p {
+                margin-bottom: 0;
+            }
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #fff;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    blockquote {
+        margin-bottom: $marb;
+        color: #fff;
+        background-color: #7797E9;
+        padding: 10px;
+    }
+    blockquote p {
+        margin-bottom: 0px;
+    }
+}
+.article_text {
+    p,
+    table,
+    ol,
+    ul,
+    blockquote,
+    table {
+        margin-bottom: var(--w25);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
